@@ -1,4 +1,4 @@
-// app/components/ExperienceFlow.tsx
+
 
 import { experiences } from "app/experience/data"
 
@@ -15,9 +15,9 @@ export function ExperienceFlow() {
           <h3 className="text-lg font-semibold text-neutral-900 dark:text-neutral-100">
             {exp.role}
           </h3>
-         <p className="font-bold text-yellow-500 dark:text-yellow-400">
-                {exp.company}
-        </p>
+          <p className={`font-bold ${exp.color}`}>
+            {exp.company}
+          </p>
           <p className="text-neutral-300 text-sm mt-1">
             {exp.description}
           </p>

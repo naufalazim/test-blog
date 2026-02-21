@@ -1,6 +1,7 @@
 import { BlogPosts } from 'app/components/posts'
 import Image from 'next/image'
 import { ExperienceFlow } from './components/ExperienceFlow'
+import { Skills } from './components/Skills'
 
 export default function Page() {
   return (
@@ -37,6 +38,9 @@ export default function Page() {
       </p>
       <div className="my-8">
         <ExperienceFlow />
+      </div>
+      <div className="my-8">
+        <Skills />
       </div>
       {/* <div className="my-8">
         <BlogPosts />
