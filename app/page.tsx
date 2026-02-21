@@ -1,21 +1,42 @@
 import { BlogPosts } from 'app/components/posts'
+import Image from 'next/image'
 
 export default function Page() {
   return (
     <section>
+      <div className="mb-6 flex items-center justify-start">
+        <div className="relative h-40 w-40 overflow-hidden rounded-full border-2 border-neutral-200 dark:border-neutral-800">
+          <Image
+            src="/profile.jpg"
+            alt="Profile Picture"
+            fill
+            className="object-cover"
+            priority
+          />
+        </div>
+      </div>
+
       <h1 className="mb-8 text-2xl font-semibold tracking-tighter">
-        My Portfolio
+        About Me
       </h1>
       <p className="mb-4">
-        {`I'm a Vim enthusiast and tab advocate, finding unmatched efficiency in
-        Vim's keystroke commands and tabs' flexibility for personal viewing
-        preferences. This extends to my support for static typing, where its
-        early error detection ensures cleaner code, and my preference for dark
-        mode, which eases long coding sessions by reducing eye strain.`}
+        Hi, I’m Naufal! 👋 I’m a <span className="font-bold text-yellow-500">Software Engineer</span> dedicated to building high-performance, 
+        scalable systems that power the banking and insurance sectors. Currently at  
+        <span className="font-bold text-orange-500"> PwC</span> , 
+        I specialize in Guidewire development (Java), modernizing core insurance platforms. 
       </p>
-      <div className="my-8">
+
+      <p className="mb-4">
+        My background includes architecting full-stack solutions 
+           for the 
+           <span className="font-bold text-yellow-500"> banking industry</span>, 
+          where I focused on optimizing performance and solving complex 
+          real-world problems. I’m a firm believer in clean code and continuous learning, 
+          currently honing my expertise in enterprise architecture to transition into a Senior Engineer role.
+      </p>
+      {/* <div className="my-8">
         <BlogPosts />
-      </div>
+      </div> */}
     </section>
   )
 }
